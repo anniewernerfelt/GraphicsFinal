@@ -157,10 +157,10 @@
             g_cameraController.target.set(0,1.5,0);
 
             // TODO: Load textures and add to materials
-            GLUtils.loadTexture("waterMat", "/water.jpg");
-            GLUtils.loadTexture("treeMat", "/tree.jpg");
-            GLUtils.loadTexture("barkMat", "/bark.jpg");
-            GLUtils.loadTexture("sandMat", "/sand.jpg");
+            GLUtils.loadTexture("waterMat", "water.jpg");
+            GLUtils.loadTexture("treeMat", "tree.jpg");
+            GLUtils.loadTexture("barkMat", "bark.jpg");
+            GLUtils.loadTexture("sandMat", "sand.jpg");
 
             let waterMat = {tint: new V3(1,1,1), mainTexture: "waterMat", shininess:100, specularIntensityl:0.05};
             let treeMat = {tint: new V3(1,1,1), mainTexture: "treeMat", shininess:100, specularIntensityl:0.05};
@@ -169,7 +169,7 @@
 
             let material = {tint: new V3(1,1,1)};
 
-            fish = new ModelTransform(OBJLoader.getMesh("fish", "/newfish.obj"), sandMat);
+            fish = new ModelTransform(OBJLoader.getMesh("fish", "newfish.obj"), sandMat);
             fish.scale.set(0.5/3, 0.1/3, 0.5/3);
             fish.rotation.set(0, -90, 0);
             fish.position.set(-50,0.3,0);
